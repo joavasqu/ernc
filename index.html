@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Victron MPPT</title>
+        <link rel="stylesheet" href="./style.css">
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
+
+    </head>
+    <body>
+        <div>
+            <h1>Solucionar Error 38 en controladores MPPT Victron</h1>
+            <h2>A. Instrucciones sin Victron Connect</h2>
+            <ol>
+                <li>Desconectar todos los paneles en los switch que hay en cada estructura de paneles solares. Dejarlos en off</li>
+                <li>Apagar el inversor, dejarlo en OFF.</li>
+                <li>Abrir el tablero eléctrico. Bajar el automático de las baterías. En caso de no estar indicado, bajar los 3.</li>
+                <li>Esperar 5 minutos.</li>
+                <li>Volver a subir el automático de las baterías en el tablero eléctrico (o todos en caso que estén todos abajo).</li>
+                <li>Volver a poner el switch de los paneles en las estructuras en posición ON.</li>
+                <li>Ver en el Battery Monitor (el redondo en el tablero eléctrico) el voltaje de las baterías (moviendo las teclas + y -) y ver si este empieza a aumentar hasta pasar los 50V (o sobre 25V en sistemas de 24). </li>
+                <li>También ver en el mismo indicador el número que sale en A. Ver VIdeo Adjunto. Si es positivo, los paneles están cargando (tomar nota de los números vistos ahí).</li>
+            </ol>
+            <br>
+            <h2>B. Instrucciones CON Victron Connect</h2>
+            <ol>
+                <li>Descargar e instalar la aplicación Victron Connect (Google Play o App Store).</li>
+                <li>Activar el Bluetooth en el celular.</li>
+                <li>Abrir la aplicación estando al lado del cargador solar y apretar el botón redondo inferior donde sale refrescar. </li>
+                <li>Debería aparecer el controlador solar, pinchar sobre el controlador solar. Si pide contraseña esta es: 000000 </li>
+                <img src="./media/paso1.jpeg" alt="">
+                <li>En caso de que arroje un error, tomar nota del número del error y cerrarlo para continuar.</li>
+                <li>Una vez adentro seleccionar la configuración arriba a la derecha (se adjunta foto).</li>
+                <img src="./media/paso2.jpeg" alt="">
+                <li>Luego seleccionar Batería.</li>
+                <img src="./media/paso3.jpeg" alt="">
+                <li>Luego seleccionar que el voltaje de batería sea 48V. O en caso de que el sistema sea de 24V, seleccionar 24V.</li>
+                <img src="./media/Paso 4.jpeg" alt="">
+                <li>Una vez realizado esto se deben volver a hacer los pasos 1-8 hechos previamente en la parte A. (partiendo con desconectar los paneles).</li>
+            </ol>
+        </div>
+    </body>
+</html>
